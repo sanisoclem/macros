@@ -1,0 +1,7 @@
+[Unit]
+Description=ydotool macro loop
+After=network.target
+
+[Service]
+ExecStart=/bin/bash /home/mel/.local/bin/single-30s.sh
+
