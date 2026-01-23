@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+mkdir -p "$HOME/.local/bin"
+mkdir -p "$HOME/.config/systemd/user"
+
+for dir in "$PWD"/*; do
+  name="$(basename "$dir")"
+
+  if [[ $dir == *.service ]]; then
+    ln -s $dir ~/.config/systemd/user/$name
+    echo "Linked: $dir"
+  fi
+
+  if [[ $dir == *.sh ]]; then
+    ln -s $dir ~/.local/bin/$name
+    echo "Linked: $dir"
+  fi
+done
+

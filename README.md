@@ -5,9 +5,8 @@ This creates user scoped systemd service to invoke ydotool macros in a loop (pro
 1. Create symlinks:
 
 ```
-chmod +x ./single-30s.sh
-ln -s $PWD/single-30s.sh ~/.local/bin/single-30s.sh
-ln -s $PWD/single-30s.service ~/.config/systemd/user/single-30s.service
+chmod +x ./link-all
+./link-all
 ```
 
 2. Start service with hotkey, which I map in my window manager. 
