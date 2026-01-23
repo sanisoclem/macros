@@ -17,3 +17,4 @@ for dir in "$PWD"/*; do
   fi
 done
 
+chmod +x *.sh

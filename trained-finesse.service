@@ -3,5 +3,5 @@ Description=ydotool macro loop
 After=network.target
 
 [Service]
-ExecStart=/bin/bash /home/mel/.local/bin/single-30s.sh
+ExecStart=/bin/sh /home/mel/.local/bin/trained-finesse.sh
 
